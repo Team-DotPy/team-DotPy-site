@@ -1,0 +1,61 @@
+body{
+    background-image: url(images/josh-rose-trYl7JYATH0-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* GLOBAL STYLES */
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-size: 5em;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2.0s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 43% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+.type{
+    font-size: 2em;
+}
+
+
+
+.typewriter{
+    padding: 20% 10% 0% 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.know-us-link{ 
+    text-align: center;
+    padding: 90px;
+}
+
+.know-us{
+    background-color: #fff;
+    margin-top: 40%;
+    text-align: center;
+}
+
