@@ -70,6 +70,13 @@ body{
   padding: 30px;
 }
 
+.clock{
+  color: #fff ;
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 10%;
+  margin-left: 07%;
+  font-size: 2em;
+}
 
 /* the footer section  */
 footer{
