@@ -61,3 +61,32 @@ body{
     justify-content: center;  
 }
 
+
+.goals{
+  background: linear-gradient(110deg, #211F1F 60%, #424141 60%);
+  margin-top: 20%;
+  text-align: center;
+  color: #fff ;
+  padding: 30px;
+}
+
+
+/* the footer section  */
+footer{
+  text-align: center;
+  background-color: #211F1F;
+  color: #fff;
+  padding: 30PX;
+  margin-top: 30%;
+}
+
+
+.avatar-div{
+  padding: 30px ;
+}
+
+.avatar{
+  height: 60px;
+  width: 60px;
+}
+/* /////////////////////////////////////// */
