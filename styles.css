@@ -54,8 +54,10 @@ body{
 }
 
 .know-us{
-    background-color: #fff;
-    margin-top: 40%;
+    /* background-color: #fff; */
+    margin-top: 30%;
     text-align: center;
+    width: 50%;
+    justify-content: center;  
 }
 
