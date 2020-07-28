@@ -37,8 +37,9 @@
     </script>
 
 </head>
+
+
 <body onload="startTime()">
-    
 
     <div class="typewriter">
         <h1 class="type">Team DotPy</h1>
@@ -80,13 +81,23 @@
         labore ullam modi autem molestiae in laudantium. Eius ullam tenetur expedita animi fuga!</P>
     </div>
 
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    
+    <div class="img-div">
+      <h3>HERE ARE OUR FUTURE PROJECTS</h3>
+      
+    </div>
 
 
 
-
-
-
-
+<script>
+    $(window).on("load",function(){
+      $(".loader-wrapper").fadeOut("slow");
+    });
+</script>
 <script>
   $(document).ready(function(){
     // Add smooth scrolling to all links
