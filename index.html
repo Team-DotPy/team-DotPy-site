@@ -23,7 +23,7 @@
         var today = new Date();
         var h = today.getHours();
         var m = today.getMinutes();
-        var s = today.getSeconds();
+        var s = today.getSeconds(); 
         m = checkTime(m);
         s = checkTime(s);
         document.getElementById('txt').innerHTML =
@@ -35,16 +35,23 @@
         return i;
       }
     </script>
+  
 
 </head>
 
 
 <body onload="startTime()">
 
+    <a onclick="topFunction()" id="myBtn" title="Go to top">
+      <img src="images/down-arrow.png" class="top-logo">
+    </a>
+
+
     <div class="typewriter">
         <h1 class="type">Team DotPy</h1>
         <br>
     </div>
+
 
     <div class="know-us-link">
         <a href="#know-us" style="color: #fff;">Know More about us </a>
@@ -88,11 +95,31 @@
     
     <div class="img-div">
       <h3>HERE ARE OUR FUTURE PROJECTS</h3>
-      
     </div>
 
-
-
+   
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+  
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+      
 <script>
     $(window).on("load",function(){
       $(".loader-wrapper").fadeOut("slow");
