@@ -17,6 +17,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet"> 
 
     <script>
       function startTime() {
@@ -35,6 +36,17 @@
         return i;
       }
     </script>
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+    
+         
   
 
 </head>
@@ -42,12 +54,32 @@
 
 <body onload="startTime()">
 
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div id="main">
+    <span style="font-size:30px;cursor:pointer;color:#fff" onclick="openNav()">&#9776; </span>
+  </div>
+
   <div class="fullscreen-bg">
     <video loop muted autoplay src="videos/video.mp4" class="fullscreen-bg__video"></video>
   </div>
 
     <a onclick="topFunction()" id="myBtn" title="Go to top">
-      <img src="images/down-arrow.png" class="top-logo">
+      <!-- <img src="images/down-arrow.png" class="top-logo"> -->
+      <svg class="top-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+      width="48" height="48"
+      viewBox="0 0 172 172"
+      style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" 
+      stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+      <path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M86,157.66667c39.5815,0 71.66667,-32.08517 71.66667,-71.66667c0,-39.5815 -32.08517,-71.66667 -71.66667,
+      -71.66667c-39.5815,0 -71.66667,32.08517 -71.66667,71.66667c0,39.5815 32.08517,71.66667 71.66667,71.66667zM86,78.83333l-35.83333,28.66667v-18.05283c0,-2.17867 0.989,-4.2355 2.69467,
+      -5.59717l28.66667,-22.93333c2.61583,-2.09267 6.33533,-2.09267 8.95117,0l28.66667,22.93333c1.6985,1.36167 2.6875,3.4185 2.6875,5.59717v18.05283z"></path></g></g></svg>
     </a>
 
 
@@ -99,9 +131,12 @@
     
     <div class="img-div">
       <h3>HERE ARE OUR FUTURE PROJECTS</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quis magni voluptate ad fuga consequuntur, 
+        esse recusandae illum nobis optio placeat velit similique quibusdam? Eaque in rerum deserunt illo id.</p>
     </div>
 
-   
+
+
 <script>
   //Get the button
   var mybutton = document.getElementById("myBtn");
