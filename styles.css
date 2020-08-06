@@ -77,6 +77,41 @@ body{
 }
 
 
+@media only screen and (max-width: 600px) {
+  .typewriter h1 {
+    color: #fff;
+    font-size: 2.5em;
+    font-family: 'Bowlby One SC', cursive;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 2.0s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  .typewriter{
+    margin-top: 40%;
+  }
+
+  .clock{
+    margin-top: 30%;
+    font-size: smaller;
+  }
+
+  .know-us{
+    width: 20%;
+    font-size: 12px;
+  }
+}
+
 
 .typewriter{
     padding: 20% 10% 0% 10%;
