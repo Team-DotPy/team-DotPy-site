@@ -132,6 +132,13 @@ body{
     justify-content: center;  
 }
 
+.form-div{
+  margin-top: 20%;
+  text-align: center;
+  color: #fff ;
+  padding: 30px;
+  background: linear-gradient(110deg, #211F1F 60%, #424141 60%);
+}
 
 .goals{
   background: linear-gradient(110deg, #211F1F 60%, #424141 60%);
