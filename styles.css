@@ -76,7 +76,7 @@ body{
     font-size: 5em;
 }
 
-
+/*/////////////////// Responsiveness ///////////////// */
 @media only screen and (max-width: 600px) {
   .typewriter h1 {
     color: #fff;
@@ -110,8 +110,16 @@ body{
     width: 20%;
     font-size: 12px;
   }
-}
 
+  .glow {
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+  
+
+}
+/* ////////////////////////////////////// */
 
 .typewriter{
     padding: 20% 10% 0% 10%;
