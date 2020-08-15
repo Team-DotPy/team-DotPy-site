@@ -111,6 +111,10 @@ body{
     font-size: 12px;
   }
 
+  footer{
+    background-size: cover;
+    background-position: center;
+  }
 
 
 }
@@ -170,13 +174,18 @@ body{
   padding: 30px;
 }
 
-
+.glow{
+  font-weight: bold;
+}
 
 
 /* the footer section  */
 footer{
   text-align: center;
-  background-color: #211F1F;
+  /* background-color: #211F1F; */
+  background-image: url(images/footer-img.png);
+  background-attachment: fixed;
+  background-size: cover;
   color: #fff;
   padding: 30PX;
   margin-top: 30%;
